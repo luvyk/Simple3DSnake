@@ -137,10 +137,12 @@ else if(event.key == "s" && direction != "up") {
 }
 
 var head = findHead(pole);
+  /*
 if(timeFromLastMove + 250 > Date.now()) 
 {
   moveBack(head);
 }
+*/
     move(head);
     ageSnake();
     placeHead(head);
