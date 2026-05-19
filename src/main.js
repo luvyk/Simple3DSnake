@@ -121,7 +121,7 @@ function ageSnake()
 }
 
 document.addEventListener('keydown', function(event) {
-      hasMoved = true;
+      
 
 if(event.key == "d" && direction != "right") {
   direction = "left";
@@ -136,17 +136,7 @@ else if(event.key == "s" && direction != "up") {
   direction = "down";
 }
 
-var head = findHead(pole);
-if(timeFromLastMove + 250 > Date.now()) 
-{
-  moveBack(head);
-}
-    move(head);
-    ageSnake();
-    placeHead(head);
-    removeTail();
 
-    hasMoved = false;
 });
         
   const canvas = document.getElementById("renderCanvas"); // Get the canvas element
