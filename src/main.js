@@ -136,7 +136,6 @@ else if(event.key == "s" && direction != "up") {
   direction = "down";
 }
 
-
 });
         
   const canvas = document.getElementById("renderCanvas"); // Get the canvas element
